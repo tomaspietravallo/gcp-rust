@@ -1,3 +1,11 @@
+use std::thread::sleep;
+use std::time::Duration;
+
 fn main() {
- println!("This should hopefully print")
+ let mut i = 0;
+ loop {
+  println!("i: {}", i);
+  i = i + 1;
+  sleep(Duration::from_millis(500));
+ }
 }
